@@ -1,3 +1,4 @@
+/* Reset e Configurações Gerais */
 * {
     margin: 0;
     padding: 0;
@@ -5,8 +6,8 @@
 }
 
 :root {
-    --primary-color: #2ecc71;
-    --secondary-color: #051c11;
+    --primary-color: #2ecc71; /* Verde claro */
+    --secondary-color: #051c11; /* Verde escuro fundo */
     --text-light: #ffffff;
     --text-dark: #333333;
     --bg-light: #f4f4f4;
@@ -93,7 +94,7 @@ nav {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(5, 28, 17, 0.85), rgba(5, 28, 17, 0.85)), url('../imagens/hero-bg.jpg');
+    background: linear-gradient(rgba(5, 28, 17, 0.85), rgba(5, 28, 17, 0.85)), url('../imagens/hero-bg.jpg'); /* Placeholder para imagem */
     background-color: var(--secondary-color);
     background-size: cover;
     background-position: center;
@@ -265,6 +266,124 @@ tr:hover {
 
 .tech-item h4 {
     margin-bottom: 5px;
+}
+
+/* Modeling Section Styles */
+.modeling-content {
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-left: 8px solid var(--primary-color);
+}
+
+.modeling-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.modeling-intro h3 {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.modeling-details {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-bottom: 50px;
+}
+
+.analysis-block {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.analysis-block.reverse {
+    flex-direction: row-reverse;
+}
+
+.analysis-text {
+    flex: 1;
+}
+
+.analysis-image {
+    flex: 1.2;
+}
+
+.analysis-text h4 {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.math-analysis {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.math-analysis li {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.math-analysis li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 900px) {
+    .analysis-block, .analysis-block.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+    .math-analysis li {
+        padding-left: 0;
+    }
+    .math-analysis li::before {
+        display: none;
+    }
+}
+
+.code-section {
+    background: #2d3436;
+    color: #dfe6e9;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.code-section h4 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.code-section pre {
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+@media (max-width: 600px) {
+    .plots-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Footer */
