@@ -6,8 +6,8 @@
 }
 
 :root {
-    --primary-color: #2ecc71; /* Verde claro */
-    --secondary-color: #051c11; /* Verde escuro fundo */
+    --primary-color: #2ecc71;
+    --secondary-color: #051c11;
     --text-light: #ffffff;
     --text-dark: #333333;
     --bg-light: #f4f4f4;
@@ -94,7 +94,7 @@ nav {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(5, 28, 17, 0.85), rgba(5, 28, 17, 0.85)), url('../imagens/hero-bg.jpg'); /* Placeholder para imagem */
+    background: linear-gradient(rgba(5, 28, 17, 0.85), rgba(5, 28, 17, 0.85)), url('../imagens/hero-bg.jpg'); /* Placeholder imagem */
     background-color: var(--secondary-color);
     background-size: cover;
     background-position: center;
